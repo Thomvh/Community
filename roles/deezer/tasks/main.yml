@@ -18,23 +18,22 @@
 - name: Create and start container
   docker_container:
     name: deezer
-    image: xanderstrike/deezer
+    image: bocki/deezloaderrmx
     pull: yes
     published_ports:
-      - "127.0.0.1:8000:8000"
+      - "127.0.0.1:1730:1730"
     env:
       PUID: "{{ uid }}"
       PGID: "{{ gid }}"
       VIRTUAL_HOST: "deezer.{{ user.domain }}"
-      VIRTUAL_PORT: 8000
+      VIRTUAL_PORT: 1730
       LETSENCRYPT_HOST: "deezer.{{ user.domain }}"
       LETSENCRYPT_EMAIL: "{{ user.email }}"
-      TRAKT_ID: "{{ deezer.trakt_id }}"
-      TRAKT_secret: "{{ deezer.trakt_secret }}"
       REDIRECT_URI: "https://deezer.{{ user.domain }}"
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
-      - "/opt/deezer:/app/keystore"
+      - "/opt/deezer:/config"
+      - "/mnt/:/mnt"
     labels:
       "com.github.cloudbox.cloudbox_managed": "true"
     networks:

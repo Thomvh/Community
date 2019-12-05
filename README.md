@@ -74,7 +74,7 @@ Please note some roles are only available in develop.
 - **embystats**
 - **funkwhale**
 - **gazee** - comic book reader
-- **[goplaxt](../../wiki/Goplaxt)** - [goplaxt](https://github.com/XanderStrike/goplaxt) Plex/Trakt Scrobbler
+- **[deezer](../../wiki/deezer)** - [deezer](https://github.com/XanderStrike/deezer) Plex/Trakt Scrobbler
 - **invoiceninja**
 - **jellyfin** - [jellyfin](https://github.com/jellyfin/jellyfin) emby fork
 - **kitana** - A responsive Plex plugin web frontend

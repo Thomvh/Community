@@ -7,7 +7,7 @@ bazarrx:
   roles: [1080webdl, 1080remux]
 calibreweb:
   caliblur: yes
-goplaxt:
+deezer:
   trakt_id:
   trakt_secret:
 bookstack:
